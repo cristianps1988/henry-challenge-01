@@ -15,8 +15,13 @@ function divisores(numero) {
 
   // Tu código aca:
 
-
-
+  let result = []
+  for (let i = 2; i < numero; i++) {
+    if ((numero % i) == 0) {
+      result.push(i)
+    }
+  }
+  return result.length == 0 ? 'Es primo' : result;
 }
 
 // No modifiques nada debajo de esta linea //

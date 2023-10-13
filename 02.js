@@ -31,8 +31,13 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
-
-
+  let online = 0
+  for (const key in usuarios) {
+    if (usuarios[key].online) {
+      online++
+    }
+  }
+  return online
 
 }
 

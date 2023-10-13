@@ -11,7 +11,14 @@ function palabraMasLarga(array) {
   // palabraMasLarga(['hola esto string', 'frase con palabra']) debe devolver 'palabra'
 
   // Tu código aca:
-
+  let newArray = []
+  array.forEach(frase => {
+    frase.split(' ').forEach(palabra => {
+      newArray.push(palabra)
+    })
+  });
+  newArray.sort((a, b) => a.length - b.length)
+  return newArray[newArray.length - 1]
 }
 
 // No modifiques nada debajo de esta linea //

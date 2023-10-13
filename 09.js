@@ -12,7 +12,14 @@ function repetirCaracteres() {
   // 'hola'.repeatCharacters() devuelve "hhoollaa"
 
   // Tu código aca:
-
+  String.prototype.repeatCharacters = function () {
+    let repeat = []
+    for (let i = 0; i < this.length; i++) {
+      repeat.push(this[i])
+      repeat.push(this[i])
+    }
+    return repeat.join('')
+  }
 }
 
 // No modifiques nada debajo de esta linea //

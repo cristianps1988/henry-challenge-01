@@ -14,7 +14,11 @@ function menorMayor(numeros) {
   // y 15 es el número más grande (mayor) dentro del arreglo [4, 6, 1, 7, 15]
 
   // Tu código aca:
-
+  let minmax = []
+  const orden = numeros.sort((a, b) => a - b)
+  minmax.push(orden[0])
+  minmax.push(orden[numeros.length - 1])
+  return minmax
 }
 
 // No modifiques nada debajo de esta linea //
